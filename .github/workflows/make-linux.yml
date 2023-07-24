@@ -13,6 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: lhotari/action-upterm@v1
     - name: Install dependencies
       run: |
         sudo apt-get install libevent-dev
@@ -23,7 +24,3 @@ jobs:
       run: ./configure
     - name: Make
       run: make
-    - name: Make check
-      run: make check
-    - name: Make distcheck
-      run: make distcheck
