@@ -13,14 +13,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: lhotari/action-upterm@v1
     - name: Install dependencies
       run: |
         sudo apt-get install libevent-dev
-        sudo apt install asciidoc
+        sudo apt-get install asciidoc
+        sudo apt-get install tree
     - name: Autogen
       run: ./autogen.sh
     - name: Configure
       run: ./configure
     - name: Make
       run: make
+    - name: Debug
+      run: make
+    - name: Build dir tree
+      run: tree
