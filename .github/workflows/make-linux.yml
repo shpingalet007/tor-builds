@@ -13,11 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: configure
-      run: ./configure.ac
-    - name: make
+    - name: Autogen
+      run: ./autogen.sh
+    - name: Configure
+      run: ./configure
+    - name: Make
       run: make
-    - name: make check
+    - name: Make check
       run: make check
-    - name: make distcheck
+    - name: Make distcheck
       run: make distcheck
