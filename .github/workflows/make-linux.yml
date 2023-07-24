@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install dependencies
-      run: apt-get install libevent-dev
+      run: sudo apt-get install libevent-dev
     - name: Autogen
       run: ./autogen.sh
     - name: Configure
