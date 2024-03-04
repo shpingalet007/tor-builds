@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print branch name
-        run: echo "Branch to deploy: ${{ github.ref }}"
+        run: 'echo "Branch to deploy: ${{ github.ref }}"'
