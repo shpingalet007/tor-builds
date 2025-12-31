@@ -1,27 +1,10 @@
-This project is no longer hosted here. Come find us at [our gitlab
-repository](https://gitlab.torproject.org/tpo/core/tor) instead.
+# TOR builds
+This repository was created for projects that need to integrate TOR inside of their projects and just want to have the builds.
 
-## About
+## Use this API to parse all release ready builds.
+> https://github.com/shpingalet007/tor-builds/releases/latest
 
-Tor protects your privacy on the internet by hiding the connection between
-your Internet address and the services you use. We believe Tor is reasonably
-secure, but please ensure you read the instructions and configure it properly.
+## Security
+All files are gathered from official [TOR distribution server](https://dist.torproject.org/torbrowser), specifically from Expert Bundles and hosted "as is" with little reorganization for specific needs of patronized projects.
 
-## Resources
-
-Home page:
-
-- https://www.torproject.org/
-
-Download new versions:
-
-- https://www.torproject.org/download/download.html
-
-Documentation, including links to installation and setup instructions:
-
-- https://www.torproject.org/docs/documentation.html
-
-Frequently Asked Questions:
-
-- https://www.torproject.org/docs/faq.html
-
+### _All rights reserved by their respective owners. Big thanks for their work!_
